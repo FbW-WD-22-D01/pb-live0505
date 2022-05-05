@@ -60,6 +60,7 @@ let zurückPush = fruits2.push("Coconut");
 console.log(fruits2);
 console.log('Push zurück:', zurückPush);
 
+
 // shift() entfernt das erste Element des Arrays und gibt es zurück
 let shiftZurück = fruits2.shift();
 console.log(fruits2);
@@ -68,6 +69,38 @@ console.log(fruits2);
 let unshiftZurück = fruits2.unshift('Lemon');
 console.log('Neuer Array nach unshift:', fruits2, 'unshift des Arrays zurück:', unshiftZurück);
 
+// reverse() --> dreht den Array um und gibt den Array als Rückgabe zurück
+fruits2.reverse();
+console.log(fruits2);
+
+// indexOf() --> gibt euch die Postion eines Elements zurück
+let position = fruits2.indexOf('Apple');
+console.log(position);
 
 
 
+const month = ["Januar", "Februar", "März"];
+
+// includes() --> gibt euch zurück, ob ein Wert vorhanden ist --> Rückgabewert boolean
+console.log(month.includes("Januar"));
+
+// join() --> erzeugt einen String aus den Elementen des Arrays
+let neuerString = month.join();
+console.log(month);
+
+// split() --> erzeugt aus einem String einen Array
+string = "Ich bin ein String";
+let strgArr = string.split(' ');
+console.log(strgArr);
+
+// splice --> Elemente entfernen oder hinzufügen, gibt die entfernten Elemente als Array zurück
+let spliceReturn = month.splice(3,0, 'April', 'Mai'); // splice(index, wieiviel Löschen, neue Elemente)
+console.log(month);
+// console.log(spliceReturn);
+
+
+// slice --> erstellt eine (shallow) Kopie beginnend von der Startposition hin zur Endposition
+console.log('Original: ', month);
+const copy = month.slice(2, 4); //slice(Start Index, Ende Index)
+console.log('Unverändertes Original: ',month);
+console.log('Kopie:' ,copy);
