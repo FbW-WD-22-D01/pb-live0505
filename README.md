@@ -2,8 +2,8 @@
 
 ### Array deklarieren
 - 2 Varianten:
-    - Literal       --> const myArr = [1,2,3];
-    - Kostruktor    --> const myArr = new Array();
+    - Literal       --> `const myArr = [1,2,3];`
+    - Kostruktor    --> `const myArr = new Array();`
 
 ### Array manipulieren (Array wird verändert)
 - literal Schreibweise `myArr[2] = 'Käse'`
